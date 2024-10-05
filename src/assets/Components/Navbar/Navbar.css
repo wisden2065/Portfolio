@@ -1,0 +1,30 @@
+head{
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    width: 80vw;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #6d6767;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6d6767;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    gap: 50px;
+}
