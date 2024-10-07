@@ -1,5 +1,7 @@
 head{
     display: flex;
+    /* position: relative; */
+    
 }
 nav{
     display: flex;
@@ -8,7 +10,7 @@ nav{
     height: 80px;
     background-color: white;
     width: 80vw;
-    
+
 }
 a{
     text-decoration: none;
@@ -23,6 +25,9 @@ li{
     font-weight: 600;
     color: #6d6767;
     cursor: pointer;
+}
+.active{
+    border-bottom: .2rem solid #4398de;
 }
 ul{
     display: flex;
