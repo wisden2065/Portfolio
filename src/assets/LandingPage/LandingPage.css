@@ -4,6 +4,7 @@
     /* height: 70vh; */
     /* margin-top: 5%; */
     align-self: center;
+    
 }
 #self_cont{
     /* display: flex; */
@@ -11,6 +12,7 @@
     width: 80vw;
     margin-top: 5rem;
     position: relative;
+    animation: fadeIn 0.5ms;
 }
 #profileImgCont{
     background-color:#4398de;
@@ -31,16 +33,21 @@
     overflow-y: hidden;
     position: absolute;
     left: 0;
+    animation: fadeIn 3s;
     
 }
 .profileImg{
     height: 400px;
     width: 400px;
+    transition: 3ms;
+    /* background-color: aqua; */
 }
+
 .profileCont{
     text-align: left;
     display: flex;
     justify-content: end;
+    animation: fade-down 1.2s;
 }
 .profile_{
     /* align-items: center; */

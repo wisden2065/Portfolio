@@ -1,6 +1,7 @@
 .skills_section{
     display: flex;
     justify-content: center;
+    animation: appear 2s;
 }
 .skills_wrapper{
     /* display: flex; */
@@ -42,11 +43,46 @@
     margin-bottom: 30px;
     border-radius: 6px;
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
-    box-shadow: -5px -3px 15px 10px rgba(148, 147, 147, 0.1);
+    box-shadow: 4px 4px 14px 5px rgba(87, 85, 85, 0.1);
+    position: relative;
+}
+._progress .img_txt{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    width: 500px;
+}
+._progress img{
+    height: 2rem;
+    margin-left: 10px;
+}
+._progress span{
+    color: black;
+    margin-right: 10px;
 }
 .bar{
-    border: .5px solid blue;
-
+    /* border: .5px solid blue; */
+    height: .25rem;
+    background-color: #4398de;
+    border-radius: .5rem;
+    position: absolute;
+    top: 90%; left: 0;
+}
+.__css{
+    width: 75%;
+}
+.__html{
+    width: 90%;
+}
+.__js{
     width: 70%;
+}
+.__react{
+    width: 30%;
+}
+.__php{
+    width: 40%;
 }

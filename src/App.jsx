@@ -8,12 +8,12 @@ import Skills from './assets/Components/SKills/Skills'
 const App = () => {
   return (
     <>
-      <div id='header__cont'>
+      {/* <div id='header__cont'> */}
         <Header />
-      </div>
+      {/* </div> */}
       <LandingPage />
-      <About />
-      <Skills />
+        <About />
+        <Skills />
     </>
   )
 }
