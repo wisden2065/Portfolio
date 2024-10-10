@@ -9,24 +9,36 @@ const Project = () => {
            
             <div id='projectsCont'>
                 <div className="proj">
+                    <div className="overlay"></div>
                     <img src={proj1} alt="" />
-                    <a href="">See Project Live</a>
-                    <a href="">View Source code</a>
+                    <div className='btnCont'>
+                        <a href="">See Project Live</a>
+                        <a href="">View Source code</a>
+                    </div>
                 </div>
                 <div className="proj">
+                <div className="overlay"></div>
                     <img src={proj1} alt="" />
-                    <a href="">See Project Live</a>
-                    <a href="">View Source code</a>
+                    <div className='btnCont'>
+                        <a href="">See Project Live</a>
+                        <a href="">View Source code</a>
+                    </div>
                 </div>
                 <div className="proj">
+                <div className="overlay"></div>
                     <img src={proj1} alt="" />
-                    <a href="">See Project Live</a>
-                    <a href="">View Source code</a>
+                    <div className='btnCont'>
+                        <a href="">See Project Live</a>
+                        <a href="">View Source code</a>
+                    </div>
                 </div>
                 <div className="proj">
+                <div className="overlay"></div>
                     <img src={proj1} alt="" />
-                    <a href="">See Project Live</a>
-                    <a href="">View Source code</a>
+                    <div className='btnCont'>
+                        <a href="">See Project Live</a>
+                        <a href="">View Source code</a>
+                    </div>
                 </div>
             </div>
 
