@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center; 
     text-align: center;
-    width: 100vw;
-    animation: appear .5ms;
-    animation-timeline: view();
+    /* width: 100vw; */
+    /* animation: appear .5ms; */
+    /* animation-timeline: view(); */
     /* animation-range: entry 30% cover; */
 }
 .about_wrapper{
