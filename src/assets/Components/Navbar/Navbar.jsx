@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import menu_icon from '../../Images/menu_bar.png'
 const Navbar = () => {
   return (
         <nav>
@@ -10,7 +11,8 @@ const Navbar = () => {
                 <li>Skills</li>
                 <li>Work</li>
                 <li>Contact</li>
-            </ul>       
+            </ul>    
+            <img src={menu_icon} alt="" className='menu_icon' />   
         </nav>
   )
 }

@@ -17,8 +17,10 @@
 }
 #profileImgCont{
     background-color:#4398de;
-    height: 450px;
-    width: 450px;
+    /* height: 30rem; */
+    /* height: clamp(200px, 15vw , 30rem); */
+    /* width: clamp(200px, 15vw , 30rem); */
+    /* width: 30rem; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -40,6 +42,8 @@
 .profileImg{
     height: 400px;
     width: 400px;
+     height: clamp(200px, 30vw , 50rem);
+    width: clamp(200px, 30vw , 50rem);
     transition: 3ms;
     /* background-color: aqua; */
 }
@@ -63,15 +67,18 @@
 }
 .profile_ h3{
     color: #222121;
-    font-size: 4rem;
-    
+    /* font-size: 4rem; */
+    font-size: clamp(30px, 5vw, 4rem);
+}
+.a-cont{
+    display: flex;
 }
 .profile_ a{
     background-color: #4398de;
-    padding: .5rem 1rem;
+    padding: clamp(5px, .005vw,1rem);
     border-radius: 8px;
     color: #ffff;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .contactSvg{
     margin-top: 13%;
@@ -86,4 +93,15 @@
 .contactSvg img:hover > svg * {
     fill: #4398de;
     cursor: pointer;
+}
+/* media query */
+@media screen and (max-width: 800px){
+    .profile_ h3{
+        /* font-size: 2rem; */
+    }
+}
+@media screen and (max-width: 350px) {
+    .profile_ a{
+        font-size: 10px;
+    }
 }

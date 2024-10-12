@@ -8,6 +8,14 @@ nav{
     width: 80vw;
 
 }
+nav .menu_icon{
+    display: none;
+    background-color: #4398de;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
 a{
     text-decoration: none;
     font-size: 18px;
@@ -28,4 +36,12 @@ li{
 ul{
     display: flex;
     gap: 50px;
+}
+@media screen and (max-width: 800px) {
+    nav .menu_icon{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
 }

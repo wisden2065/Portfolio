@@ -4,6 +4,7 @@ import profilePic from '../Images/MyPic.png'
 import linkedinIcon from '../Images/linkedin-in-brands-solid.svg'
 import githubIcon from '../Images/github-brands-solid.svg'
 import mediumIcon from '../Images/medium-brands-solid.svg'
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid'
 // import { faCat } from '@awesome.me/kit-KIT_CODE/icons/sharp/solid'
@@ -24,7 +25,9 @@ const LandingPage = () => {
                             I'm <span className='name'>Wisdom</span>
                             <br /> A Web Engineer
                         </h3>
-                        <a href="">Contact</a><a href="">Download CV</a>
+                        <div className='a-cont'>
+                            <a href="">Contact</a><a href="">Download CV</a>
+                        </div>
                         <div className='contactSvg'>
                             {/* <FontAwesomeIcon icon={fas.faHouse}/> */}
                             {/* <Linkedin color={'green'} /> */}
