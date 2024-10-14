@@ -11,8 +11,10 @@ const Skills = () => {
             <h3 className='skills_title'>Skills</h3>
             <div className='skills_'>
                 <div className="skills_cont">
-                    <h3>Professional Skills</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, ea porro vitae tempore maxime tenetur?</p>
+                    {/* <div class="flex"> */}
+                        <h3>Professional Skills</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, ea porro vitae tempore maxime tenetur?</p>
+                    {/* </div> */}
                     <div className="html _progress">
                         <div className='img_txt'>
                             <img src={html_icon} alt="" />
@@ -23,8 +25,8 @@ const Skills = () => {
                     </div>
                     <div className="css _progress">
                         <div className='img_txt'>
-                                <img src={css_icon} alt="" />
-                                <h4>CSS</h4>
+                            <img src={css_icon} alt="" />
+                            <h4>CSS</h4>
                         </div> 
                         <span>75%</span>
                         <div className="bar __css"></div>
@@ -45,6 +47,9 @@ const Skills = () => {
                         <span>40%</span>
                         <div className="bar __php"></div>
                     </div>
+                </div>
+                <div id='empty'>
+
                 </div>
             </div>
         </div>

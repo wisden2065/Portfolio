@@ -88,3 +88,39 @@
 .__php{
     width: 40%;
 }
+
+/* media query */
+@media screen and (max-width: 800px){
+    .skills_cont{
+        width: 100%;
+        /* background-color: #4398de; */
+    }
+    .skills_title,
+    .skills_cont h3{
+        font-size: clamp(10px, 3vw, 1.2rem);
+        /* color: red; */
+    }
+    .skills_cont p{
+        display: unset;
+        font-size: clamp(8px, 2vw, 1rem);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex{
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    ._progress{
+        font-size: clamp(10px, 2vw, 1rem);
+        height: clamp(10px, 5vh, 40px);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        position: relative;
+        padding: 5px 0;
+        width: 80vw;
+    }
+    .img_txt img{
+        height: clamp(20px, 2vh, 2rem);
+        margin-left: 5%;
+    }
+}

@@ -11,15 +11,13 @@ import Footer from './assets/Components/Footer/Footer'
 const App = () => {
   return (
     <>
-      {/* <div id='header__cont'> */}
-        <Header />
-      {/* </div> */}
+      <Header />
       <LandingPage />
-        <About />
-        <Skills />
-        <Project />
-        <Form/>
-        <Footer />
+      <About />
+      <Skills />
+      <Project />
+      <Form/>
+      <Footer />
     </>
   )
 }
