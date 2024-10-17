@@ -4,10 +4,12 @@ footer{
     /* width: 100vw; */
     display: flex;
     justify-content: center;
+    
 }
 .footer{
     /* color: black; */
     width: 80vw;
     text-align: center;
     color: #fff;
+    font-size: clamp(8px, 2vw, .7rem);
 }

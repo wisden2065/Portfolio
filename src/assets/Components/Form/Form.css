@@ -23,11 +23,15 @@
 }
 form{
     display: grid;
-    grid-template-rows: 30px 30px 40% 30px;
-    row-gap: 30px;
-    height: 80vh;
-    width: 30vw;
-    /* background-color: aquamarine; */
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    row-gap: 20px;
+    height: 60vh;
+    width: 40vw;
+    background-color: aquamarine;
+}
+.input{
+    width: 100%;
+    font-size: clamp(8px, 3vw, 1rem);
 }
 .formWrapper button{
     padding: 10px 10px;
@@ -37,4 +41,5 @@ form{
     text-align: center;
     border: none;
     outline: none;
+    font-size: clamp(8px, 3vw, 1rem);
 }

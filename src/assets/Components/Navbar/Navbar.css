@@ -3,29 +3,29 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: clamp(30px, 10vh, 80px);
     /* background-color: red; */
     width: 80vw;
-
 }
 nav .menu_icon{
     display: none;
     background-color: #4398de;
-    height: 2rem;
-    width: 2rem;
+    height: clamp(20px, 1.5vh, 1.5rem);
+    width: clamp(20px, 1.5vh, 1.5rem);
     border-radius: 50%;
     cursor: pointer;
 }
 a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: clamp(12px, 1.5vw, 18px);
     font-weight: 700;
     color: #6d6767;
     cursor: pointer;
 }
 li{
     list-style-type: none;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(12px, 1.5vw, 18px);
     font-weight: 600;
     color: #6d6767;
     cursor: pointer;

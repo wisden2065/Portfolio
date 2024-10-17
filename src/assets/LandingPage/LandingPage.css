@@ -40,9 +40,9 @@
     
 }
 .profileImg{
-    height: 400px;
-    width: 400px;
-     height: clamp(200px, 30vw , 50rem);
+    /* height: 400px; */
+    /* width: 400px; */
+    height: clamp(200px, 30vw , 50rem);
     width: clamp(200px, 30vw , 50rem);
     transition: 3ms;
     /* background-color: aqua; */
@@ -68,7 +68,7 @@
 .profile_ h3{
     color: #222121;
     /* font-size: 4rem; */
-    font-size: clamp(30px, 5vw, 4rem);
+    font-size: clamp(14px, 5vw, 3rem);
 }
 .a-cont{
     display: flex;
@@ -88,20 +88,43 @@
     gap: 30px;
 }
 .contactSvg img{
-    height: 1.5rem;
+    height: clamp(10px, 3vh, 2rem);
+    width: clamp(10px, 3vw, 2rem);
 }
 .contactSvg img:hover > svg * {
     fill: #4398de;
     cursor: pointer;
 }
 /* media query */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 320px) {
+    #profileImgCont{
+        margin-top: 10px;
+    }
+    .profileImg{
+        height: clamp(3px, 4vh , 2rem);
+        width: clamp(3px, 4vw , 2rem);
+    }
+}
+@media screen and (max-width: 380px) {
+    .profile_ a{
+        font-size: 8px;
+    }
+    .profileImg{
+        height: clamp(100px, 10vh , 20rem);
+        width: clamp(100px, 10vw , 20rem);
+    }
+   
+}
+
+@media screen and (min-width: 330px) and (max-width: 425px){
     .profile_ h3{
         /* font-size: 2rem; */
     }
-}
-@media screen and (max-width: 350px) {
-    .profile_ a{
-        font-size: 10px;
+    #profileImgCont{
+        /* background-color: transparent; */
+    }
+    .profileImg{
+        height: clamp(130px, 10vh , 20rem);
+        width: clamp(130px, 10vw , 20rem);
     }
 }

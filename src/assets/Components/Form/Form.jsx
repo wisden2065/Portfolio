@@ -27,12 +27,12 @@ const Form = () => {
     }
   return (
     <section className='formSection'> 
-      <h3>Contact</h3>
+      <h3 className='skills_title'>Contact</h3>
       <div className="formWrapper">
         <form action="" onSubmit={sendMail}>
-            <input name='name' type="text" placeholder='Name' onChange={(e)=>{handleChanges(e)}} />
-            <input name='email' type="text" placeholder='Email' onChange={(e)=>{handleChanges(e)}} />
-            <textarea name="contact_text" id="" onChange={(e)=>{handleChanges(e)}} ></textarea>
+            <input className='input' name='name' type="text" placeholder='Name' onChange={(e)=>{handleChanges(e)}} />
+            <input className='input' name='email' type="text" placeholder='Email' onChange={(e)=>{handleChanges(e)}} />
+            <textarea className='input' name="contact_text" id="" onChange={(e)=>{handleChanges(e)}} ></textarea>
             <button >Send</button>
         </form>
         
