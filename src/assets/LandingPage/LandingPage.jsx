@@ -23,7 +23,7 @@ const LandingPage = () => {
                         <h3>Hi,
                             <br />
                             I'm <span className='name'>Wisdom</span>
-                            <br /> A Web Engineer
+                            <br /> A Software Engineer
                         </h3>
                         <div className='a-cont'>
                             <a href="">Contact</a><a href="">Download CV</a>
