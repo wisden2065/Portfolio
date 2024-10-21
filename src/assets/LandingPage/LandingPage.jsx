@@ -1,11 +1,7 @@
 import React from 'react'
 import './LandingPage.css'
 import profilePic from '../Images/MyPic.png'
-import linkedinIcon from '../Images/linkedin-in-brands-solid.svg'
-import githubIcon from '../Images/github-brands-solid.svg'
-import mediumIcon from '../Images/medium-brands-solid.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid'
