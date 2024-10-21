@@ -4,7 +4,9 @@ import profilePic from '../Images/MyPic.png'
 import linkedinIcon from '../Images/linkedin-in-brands-solid.svg'
 import githubIcon from '../Images/github-brands-solid.svg'
 import mediumIcon from '../Images/medium-brands-solid.svg'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid'
 // import { faCat } from '@awesome.me/kit-KIT_CODE/icons/sharp/solid'
@@ -26,14 +28,14 @@ const LandingPage = () => {
                             <br /> A Software Engineer
                         </h3>
                         <div className='a-cont'>
-                            <a href="">Contact</a><a href="">Download CV</a>
+                            <a href="">Contact</a><a href="">Download CV <FontAwesomeIcon icon={faDownload} /></a>
                         </div>
                         <div className='contactSvg'>
                             {/* <FontAwesomeIcon icon={fas.faHouse}/> */}
                             {/* <Linkedin color={'green'} /> */}
-                            <img  src={linkedinIcon} alt="" />
-                            <img  src={githubIcon} alt="" />
-                            <img  src={mediumIcon} alt="" />
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                            <FontAwesomeIcon icon={faGithub} />
+                            <FontAwesomeIcon icon={faMedium} />
                         </div>
                     </div>
                 </div>

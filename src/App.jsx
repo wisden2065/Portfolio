@@ -8,6 +8,7 @@ import Skills from './assets/Components/SKills/Skills'
 import Project from './assets/Components/Projects/Project'
 import Form from './assets/Components/Form/Form'
 import Footer from './assets/Components/Footer/Footer'
+
 const App = () => {
   return (
     <>

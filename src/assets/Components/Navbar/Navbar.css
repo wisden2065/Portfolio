@@ -9,9 +9,8 @@ nav{
 }
 nav .menu_icon{
     display: none;
-    background-color: #4398de;
-    height: clamp(20px, 1.5vh, 1.5rem);
-    width: clamp(20px, 1.5vh, 1.5rem);
+    height: clamp(15px, 1vh, 1.5rem);
+    width: clamp(15px, 1vw, 1.5rem);
     border-radius: 50%;
     cursor: pointer;
 }
