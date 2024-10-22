@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external:[]
+      external:[]  //keep this empty or only add libraries that should not be bundle
     }
   }
 })
