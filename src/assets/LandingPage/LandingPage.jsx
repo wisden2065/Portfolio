@@ -1,7 +1,7 @@
 import React from 'react'
 import './LandingPage.css'
 import profilePic from '../Images/MyPic.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import {  faLinkedinIn, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

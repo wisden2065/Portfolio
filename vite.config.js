@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external:['@fortawesome/free-brands-svg-icons']  //keep this empty or only add libraries that should not be bundle
+      external:[]  //keep this empty or only add libraries that should not be bundle
     }
   }
 })
