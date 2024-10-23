@@ -22,7 +22,7 @@
     /* width: 50px; */
     text-align: center;
     position: relative;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .section_title::after{
     position: absolute;
