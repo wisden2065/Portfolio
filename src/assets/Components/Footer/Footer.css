@@ -8,7 +8,7 @@ footer{
 }
 .footer{
     /* color: black; */
-    width: 80vw;
+    /* width: 80vw; */
     text-align: center;
     color: #fff;
     font-size: clamp(8px, 2vw, .7rem);
