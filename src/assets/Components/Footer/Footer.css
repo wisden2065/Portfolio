@@ -1,14 +1,15 @@
 footer{
     background-color: rgb(4, 4, 51);
     height: 200px;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     
 }
 .footer{
     /* color: black; */
-    /* width: 80vw; */
+    width: 100%;
+
     text-align: center;
     color: #fff;
     font-size: clamp(8px, 2vw, .7rem);
