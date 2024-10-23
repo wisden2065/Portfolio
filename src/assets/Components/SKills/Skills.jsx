@@ -21,7 +21,7 @@ const Skills = () => {
                     <div className="html _progress">
                         <div className='img_txt'>
                             {/* <img src={html_icon} alt="" /> */}
-                            <FontAwesomeIcon  icon={faHtml5} style={{color: "orangered"}}/>
+                            <FontAwesomeIcon className='icon' icon={faHtml5} style={{color: "orangered"}}/>
                             <h4>HTML</h4>
                         </div> 
                         <span>90%</span>
@@ -30,7 +30,7 @@ const Skills = () => {
                     <div className="css _progress">
                         <div className='img_txt'>
                             {/* <img src={css_icon} alt="" /> */}
-                            <FontAwesomeIcon icon={faCss3} />
+                            <FontAwesomeIcon className='icon' icon={faCss3} />
                             <h4>CSS</h4>
                         </div> 
                         <span>75%</span>
@@ -39,8 +39,8 @@ const Skills = () => {
                     <div className="js _progress">
                         <div className='img_txt'>
                             {/* <img src={css_icon} alt="" /> */}
-                            <FontAwesomeIcon icon={faJs}  style={{color: 'yellow'}}/>
-                            <h4>CSS</h4>
+                            <FontAwesomeIcon className='icon' icon={faJs}  style={{color: 'yellow'}}/>
+                            <h4>Javascript</h4>
                         </div> 
                         <span>75%</span>
                         <div className="bar __css"></div>
@@ -48,7 +48,7 @@ const Skills = () => {
                     <div className="react _progress">
                         <div className='img_txt'>
                             {/* <img src={react_icon} alt="" /> */}
-                            <FontAwesomeIcon  icon={faReact}  style={{color:'blue'}}/>
+                            <FontAwesomeIcon className='icon'  icon={faReact}  style={{color:'blue'}}/>
                             <h4>REACT JS</h4>
                         </div> 
                         <span>30%</span>
@@ -57,20 +57,20 @@ const Skills = () => {
                     <div className="php _progress">
                         <div className='img_txt'>
                             {/* <img src={php_icon} alt="" /> */}
-                            <FontAwesomeIcon  className='fontAwsomeIcon' icon={faNode} style={{color:'green'}} />
+                            <FontAwesomeIcon className='icon' icon={faNode} style={{color:'green'}} />
                             <h4>Node Js</h4>
                         </div> 
                         <span>40%</span>
-                        <div className="bar __php"></div>
+                        <div className="bar __node"></div>
                     </div>
                     <div className="node _progress">
                         <div className='img_txt'>
                             {/* <img src={php_icon} alt="" /> */}
-                            <FontAwesomeIcon icon={faPhp} />
+                            <FontAwesomeIcon className='icon' icon={faPhp} />
                             <h4>PHP</h4>
                         </div> 
                         <span>40%</span>
-                        <div className="bar __node"></div>
+                        <div className="bar __php"></div>
                     </div>
                 </div>
                 <div id='empty'>

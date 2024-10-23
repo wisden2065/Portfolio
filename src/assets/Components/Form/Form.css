@@ -1,6 +1,7 @@
 .formSection{
     /* display: flex; */
     /* justify-content: center; */
+    margin-bottom: 5%;
 }
 .formSection h3{
     text-align: center;
@@ -12,7 +13,7 @@
     width: 3rem;
     height: 0.23rem;
     position: absolute;
-    top: 2rem;
+    top: 100%;
     left: 0; right: 0;
     margin: auto;
 }
@@ -26,8 +27,7 @@ form{
     grid-template-rows: 1fr 1fr 4fr 1fr;
     row-gap: 20px;
     height: 60vh;
-    width: 40vw;
-    background-color: aquamarine;
+    width: 60vw;
 }
 .input{
     width: 100%;
