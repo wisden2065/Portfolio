@@ -36,6 +36,34 @@ ul{
     display: flex;
     gap: 50px;
 }
+.menu_icon{
+    position: relative;
+}
+.drop-down-wrapper{
+    background-color: rgb(4, 4, 51);
+    color: white;
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: linear .5s;
+}
+.drop-down{
+    font-size: clamp(12px, 1.5vw, 18px);
+    padding: 20px;
+}
+.drop-down ul{
+    display: block;
+}
+.drop-down-wrapper.active{
+    width: 40%;
+}
+.drop-down ul li{
+    margin-bottom: 10px;
+}
+.drop-down ul li a{
+    color: white;
+}
 @media screen and (max-width: 800px) {
     nav .menu_icon{
         display: block;
