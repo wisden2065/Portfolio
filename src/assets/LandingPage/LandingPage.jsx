@@ -12,7 +12,7 @@ import {  faLinkedinIn, faGithub, faMedium } from '@fortawesome/free-brands-svg-
 const LandingPage = () => {
   return (
     <>
-        <section className="selfCont_wrapper">
+        <section className="selfCont_wrapper" id='home-section'>
             <div id='self_cont'>
                 <div id="profileImgCont">
                     <img className='profileImg' src={profilePic} alt="" />

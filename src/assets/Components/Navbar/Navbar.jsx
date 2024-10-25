@@ -7,7 +7,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons'; 
 
 
-
 const Navbar = () => {
   // add a state to toggle active btn
   const [active, setActive] = useState('');
@@ -31,11 +30,11 @@ const Navbar = () => {
           <nav>
               <a href="">Wisdom</a>
               <ul>
-                  <li className={active === 'About'? 'active': ''}  onClick={()=>{setActive('About')}}>About</li>
-                  <li className={active === ''? 'active': ''}   onClick={()=>{setActive()}}>Home</li>
-                  <li className={active === 'Skills'? 'active': ''}  onClick={()=>{setActive('Skills')}}>Skills</li>
-                  <li className={active === 'Work'? 'active': ''}  onClick={()=>{setActive('Work')}}>Work</li>
-                  <li className={active === 'Contact'? 'active': ''}  onClick={()=>{setActive('Contact')}}>Contact</li>
+                  <li className={active === 'About'? 'active': ''}  onClick={()=>{setActive('About')}}><a href='#about-section'>About</a></li>
+                  <li className={active === ''|| active ==='Home'? 'active': ''}   onClick={()=>{setActive('Home')}}><a href='#home-section'>Home</a></li>
+                  <li className={active === 'Skills'? 'active': ''}  onClick={()=>{setActive('Skills')}}><a href='#skills-section'>Skills</a></li>
+                  <li className={active === 'Work'? 'active': ''}  onClick={()=>{setActive('Work')}}><a href='#work-section'>Work</a></li>
+                  <li className={active === 'Contact'? 'active': ''}  onClick={()=>{setActive('Contact')}}><a href='#contact-section'>Contact</a></li>
               </ul>   
               <FontAwesomeIcon className='menu_icon' icon={isMenuOpen == true? faXmark : faBars} onClick={toggleDropdown} />
              {/* condtionally render dropdown if icon clicked is true */}
@@ -43,11 +42,11 @@ const Navbar = () => {
                  <div className="drop-down-wrapper active">
                     <div className="drop-down">
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#google.com">About</a></li>
+                            <li><a href="#home-section">Home</a></li>
+                            <li><a href="#work-section">Work</a></li>
+                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </div>
                </div>
@@ -55,11 +54,11 @@ const Navbar = () => {
                <div className="drop-down-wrapper">
                <div className="drop-down">
                    <ul>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">Work</a></li>
-                       <li><a href="#">Skills</a></li>
-                       <li><a href="#">Contact</a></li>
+                       <li><a href="#about-section">About</a></li>
+                       <li><a href="#home-section">Home</a></li>
+                       <li><a href="#work-section">Work</a></li>
+                       <li><a href="#skills-section">Skills</a></li>
+                       <li><a href="#contact-section">Contact</a></li>
                    </ul>
                </div>
              </div> 

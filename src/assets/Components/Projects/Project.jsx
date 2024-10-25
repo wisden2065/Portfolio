@@ -3,7 +3,7 @@ import './Projects.css'
 import proj1 from '../../Images/proj1.jpg'
 const Project = () => {
   return (
-    <section className='projects_'>
+    <section className='projects_' id='work-section'>
        <h3 className='skills_title'>Projects</h3>
        <div className="projectWrapper">
             <div id='projectsCont'>

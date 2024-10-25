@@ -26,7 +26,7 @@ const Form = () => {
         
     }
   return (
-    <section className='formSection'> 
+    <section className='formSection' id='contact-section'> 
       <h3 className='skills_title'>Contact</h3>
       <div className="formWrapper">
         <form action="" onSubmit={sendMail}>

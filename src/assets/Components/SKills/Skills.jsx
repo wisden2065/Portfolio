@@ -9,7 +9,7 @@ import { faNode, faJs, faReact, faHtml5, faCss3, faPhp } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Skills = () => {
   return (
-    <section className='skills_section'>
+    <section className='skills_section' id='skills-section'>
         <div className="skills_wrapper">
             <h3 className='skills_title'>Skills</h3>
             <div className='skills_'>
