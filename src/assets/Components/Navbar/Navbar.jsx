@@ -42,7 +42,7 @@ const Navbar = () => {
                  <div className="drop-down-wrapper active">
                     <div className="drop-down">
                         <ul>
-                            <li><a href="#google.com">About</a></li>
+                            <li><a href="#about-section">About</a></li>
                             <li><a href="#home-section">Home</a></li>
                             <li><a href="#work-section">Work</a></li>
                             <li><a href="#skills-section">Skills</a></li>
