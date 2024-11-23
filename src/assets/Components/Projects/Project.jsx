@@ -19,8 +19,8 @@ const Project = () => {
                     <div className="overlay"></div>
                     <img src={proj1} alt="" />
                     <div className='btnCont'>
-                        <a href="">See Project Live</a>
-                        <a href="">View Source code</a>
+                        <a href="https://kongaui-clone-bq0jw5src-nnanyereugos-projects.vercel.app/">See Project Live</a>
+                        <a href="https://github.com/wisden2065/kongaclone.git">View Source code</a>
                     </div>
                 </div>
                 <div className="proj">
