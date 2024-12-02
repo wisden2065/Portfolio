@@ -36,6 +36,35 @@ ul{
     display: flex;
     gap: 50px;
 }
+.icon-cont{
+    /* height: 30px; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.icon-cont .icon{
+    background-color: #d2d1d6;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-cont .icon .i{
+    font-size: clamp(10px, 1.5vw, 16px);
+    /* color: #ffdd00; Bulb color */
+    /* text-shadow:  */
+      /* 0 0 10px #ffdd00, */
+      /* 0 0 20px #ffdd00, */
+      /* 0 0 30px #ffaa00,  */
+      /* 0 0 40px #ffaa00; */
+}
+.icon-cont .icon:nth-child(2){
+    display: none;
+}
 .menu_icon{
     position: relative;
 }
@@ -67,9 +96,15 @@ ul{
 @media screen and (max-width: 800px) {
     nav .menu_icon{
         display: block;
-
+    }
+    .icon-cont .icon:nth-child(2){
+        display: block;
+        display: flex;
     }
     nav ul{
         display: none;
+    }
+    .icon-cont{
+        justify-content: unset;
     }
 }
