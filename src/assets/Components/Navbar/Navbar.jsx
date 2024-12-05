@@ -8,6 +8,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 // import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 
 const Navbar = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
     const [isLight, setLight] = useState(true);
     function toggleLight(){
         setLight(!isLight)
+
     }
 
     // let menu = document.querySelector('.drop-down-wrapper');
@@ -33,7 +35,12 @@ const Navbar = () => {
         setIconClicked(!iconClicked)
 
     }
+    useEffect(()=>{
+        let body = document.querySelector('body');
+        body.classList.toggle('dark');
 
+
+    }, [isLight])
     return (
           <nav>
               <a href="">Wisdom</a>
@@ -47,7 +54,7 @@ const Navbar = () => {
               </ul>   
              <div className='icon-cont'>
                 <div className='icon'>
-                    <FontAwesomeIcon icon={isLight? faMoon : faSun} className='i' onClick={toggleLight} />
+                    <FontAwesomeIcon icon={isLight? faMoon : faSun} className={isLight==true? 'i light': 'i dark'} onClick={toggleLight} />
                 </div>
                 <div className='icon'>
                     <FontAwesomeIcon className='i' icon={isMenuOpen == true? faXmark : faBars} onClick={toggleDropdown} />

@@ -55,12 +55,19 @@ ul{
 }
 .icon-cont .icon .i{
     font-size: clamp(10px, 1.5vw, 16px);
-    /* color: #ffdd00; Bulb color */
-    /* text-shadow:  */
-      /* 0 0 10px #ffdd00, */
-      /* 0 0 20px #ffdd00, */
-      /* 0 0 30px #ffaa00,  */
-      /* 0 0 40px #ffaa00; */
+}
+.icon-cont .icon .light{
+   
+    color: #ffdd00;
+    text-shadow:  
+      0 0 10px #ffdd00, 
+      0 0 20px #ffdd00,
+      0 0 30px #ffaa00, 
+       0 0 40px #ffaa00;
+}
+.icon-cont .icon .dark{
+    color: #353637;
+    background-color: transparent;
 }
 .icon-cont .icon:nth-child(2){
     display: none;
