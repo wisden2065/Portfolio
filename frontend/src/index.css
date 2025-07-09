@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  src: url('../../Desktop/Segoe\ UI.ttf');
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body.dark{
+  background-color: black;
+  color: white !important;
+}
+body.light{
+  background-color: white;
+  color: black;
+}
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+      /* transform: translateY(-30px) scale(0.9); */
+
+  }
+  100%{
+      opacity: 1;
+      /* transform: translateY(0px) scale(1); */
+  }    
+}
+@keyframes fade-down {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50%{
+    opacity: .5;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Media query */
+@media screen and (max-width:425px) {
+  
+}
