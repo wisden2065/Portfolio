@@ -13,6 +13,7 @@ import Skills from '../Components/SKills/Skills';
 import About from '../Components/About/About';
 
 import LandingBg from '../Images/codingBg.jpg'
+import FAQ from '../Components/FAQ/FAQ';
 
 const skillBadges = [
   { label: 'Web Development', icon: web },
@@ -110,6 +111,7 @@ const LandingPage = () => {
       </section>
       <Skills />
       <About />
+      <FAQ />
     </>
   );
 };

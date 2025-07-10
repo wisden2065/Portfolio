@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <nav className={`navbar px-5  d-flex justify-content-between align-items-center`}>
+    <nav className={`navbar px-5  d-flex justify-content-between align-items-center `}>
       <a href="/" className="navbar-logo">MovingMachine {'</>'}</a>
 
       {/* Main Nav */}
