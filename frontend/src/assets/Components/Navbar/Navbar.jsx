@@ -54,7 +54,7 @@ const Navbar = () => {
 
       {/* Icons */}
       <div className="icon-container d-flex align-items-center gap-3">
-        <span className='rounded-circle d-flex justify-content-center align-items-center' style={{backgroundColor:'#4398de', height:'30px', width:'30px', cursor:'pointer'}}>
+        <span className='rounded-circle d-flex justify-content-center align-items-center' style={{backgroundColor:`${theme=='light'?'grey':'white'}`, height:'30px', width:'30px', cursor:'pointer'}}>
             <FontAwesomeIcon
             icon={theme === 'light' ? faMoon : faSun}
             className={`icon cursor-pointer ${theme} rounded-circle`}

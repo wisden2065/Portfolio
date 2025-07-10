@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Form.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { MyContext } from '../../Context/MyAppContext';
 
 const Form = () => {
+  const {theme} = useContext(MyContext)
   const [contactDetails, setContactDetails] = useState({
     name: '',
     email: '',
@@ -36,16 +38,16 @@ const Form = () => {
   };
 
   return (
-    <div className="container py-5">
+    <div className={`container py-5 `}>
       <div className="row justify-content-center">
         <div className="col-lg-10">
-          <div className="row contact-card bg-white shadow rounded overflow-hidden">
+          <div className={`row contact-card shadow rounded overflow-hidden ${theme === 'light' ? 'bg-light text-dark ' : 'bg-black border rounded-3 text-white ' }`}>
             {/* Contact Info */}
             <div className="col-md-5 contact-left text-white d-flex flex-column justify-content-center p-4" style={{ backgroundColor: '#222' }}>
               <div>
                 <h2 className="mb-3">Let's Talk</h2>
                 <p><i className="bi bi-geo-alt-fill me-2"></i>Abuja, Nigeria</p>
-                <p><i className="bi bi-envelope-fill me-2"></i>hello@wisdomcodes.dev</p>
+                <p><i className="bi bi-envelope-fill me-2"></i>hello@nnanyereugo.dev</p>
                 <p><i className="bi bi-telephone-fill me-2"></i>+234 707 209 8818</p>
                 <hr style={{ borderColor: 'rgba(255,255,255,0.2)' }} />
                 <h5>Follow me</h5>
@@ -68,8 +70,8 @@ const Form = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className="form-control"
-                    placeholder="Please enter your full name"
+                    className={`form-control ${theme === 'light' ? 'bg-light text-dark ' : 'bg-black border rounded-3 text-white ' }`}
+                    placeholder={`${theme != 'dark'?'Please enter your full name':''}`}
                     value={contactDetails.name}
                     onChange={handleChanges}
                     required
@@ -81,8 +83,8 @@ const Form = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className={`form-control ${error ? 'is-invalid' : ''}`}
-                    placeholder="you@example.com"
+                    className={`form-control ${error ? 'is-invalid' : ''} ${theme === 'light' ? 'bg-light text-dark ' : 'bg-black border rounded-3 text-white ' }`}
+                    placeholder={`${theme != 'dark'?'Enter a valid email':''}`}
                     value={contactDetails.email}
                     onChange={handleChanges}
                     required
@@ -95,8 +97,8 @@ const Form = () => {
                     name="contact_text"
                     id="contact_text"
                     rows="4"
-                    className="form-control"
-                    placeholder="What would you like to discuss?"
+                    className={`form-control ${theme === 'light' ? 'bg-light text-dark ' : 'bg-black border rounded-3 text-white ' }`}
+                    placeholder={`${theme != 'dark'?'What would you like to discuss..':''}`}
                     value={contactDetails.contact_text}
                     onChange={handleChanges}
                     required

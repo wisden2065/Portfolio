@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import BlogHeader from './BlogHeader';
 import BlogLayout from './BlogLayout';
 
 import code from '../../Images/codingBg.jpg'
+import { MyContext } from '../../Context/MyAppContext';
 
 const Blog = () => {
+  const {theme} = useContext(MyContext)
   return (
     <>
       <BlogHeader />
@@ -33,9 +35,9 @@ const Blog = () => {
         <div className="container py-5">
             <div className="d-flex justify-content-center">
               <div className="card text-center shadow-sm" style={{ maxWidth: '500px' }}>
-                <div className="card-body">
+                <div className={`card-body ${theme === 'light' ? 'bg-light text-dark ' : 'bg-black border rounded-3 text-white ' }`}>
                   <h5 className="card-title mb-3">No Blog Posts Yet</h5>
-                  <p className="card-text text-muted">
+                  <p className={`card-text ${theme === 'light' ? 'text-muted ' : 'text-white ' }`}>
                     Stay tuned — exciting articles, tips, and project updates will be published here soon.
                   </p>
                   <span role="img" aria-label="writing hand" style={{ fontSize: '2rem' }}>
