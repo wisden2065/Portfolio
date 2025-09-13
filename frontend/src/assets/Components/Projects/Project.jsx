@@ -1,8 +1,15 @@
 import React from 'react'
 import './Projects.css'
 import proj1 from '../../Images/proj1.jpg'
+import Chatbot from '../Chatbot/Chatbot'
 const Project = () => {
     let projects = [
+        {
+            "Project Title": "Awata Technologies",
+            "Project Thumbnail": proj1,
+            "Project Description": "This is a mini clone for konga, a successful e-commerce store in Nigeria",
+            "Project Stack": ['HTML', 'CSS', 'JAvascript', 'NodeJs', 'ExpressJs']
+        },
         {
             "Project Title": "Munchino E-commerce",
             "Project Thumbnail": proj1,
@@ -14,11 +21,12 @@ const Project = () => {
             "Project Thumbnail": proj1,
             "Project Description": "This is a mini clone for konga, a successful e-commerce store in Nigeria",
             "Project Stack": ['HTML', 'CSS', 'JAvascript', 'NodeJs', 'ExpressJs']
-        }
+        },
     ]
   return (
     <section className='projects_' id='work-section'>
        <h3 className='skills_title'>Projects</h3>
+       <Chatbot />
        <div className="projectWrapper">
             <div id='projectsCont'>
               {projects.map(project=>{
@@ -35,6 +43,7 @@ const Project = () => {
             </div>
 
        </div>
+       
     </section>
   )
 }

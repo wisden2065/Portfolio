@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faMobileAlt, faChalkboardTeacher, faChartLine, faCode, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 import mockup1 from '../../Images/mockup1-desktop.png';
 import mockup2 from '../../Images/mockup2-desktop.png';
+import mockup3 from '../../Images/mockup8-desktop.png';
+
 import { MyContext } from '../../Context/MyAppContext';
 
 const services = [
@@ -47,11 +49,18 @@ const services = [
 
 const projects = [
   {
+    image: mockup3,
+    title: 'Corporate Website – IT Training & Solutions Company',
+    description: 'Redesigned and rebuilt my company’s website to increase visibility, improve user experience, and better showcase core company’s services. The project combined technical implementation with strategic content optimization for SEO and brand positioning.',
+    stack: ['React', 'Node.js', 'Bootstrap', 'SEO Optimization', 'Content Strategy'],
+    link: 'https://awatatech.com/'
+  },
+  {
     image: mockup1,
     title: 'Konga Clone – Smart E-Commerce Platform',
-    description: 'A full-featured e-commerce platform inspired by Konga, enhanced with AI product recommendations, live chat, and secure auth.',
+    description: 'A full-featured e-commerce platform inspired by Konga, enhanced with AI product recommendations, implementing live chat, and secure auth.',
     stack: ['React', 'Node.js', 'MongoDB', 'Bootstrap'],
-    link: '#'
+    link: 'https://konga-ui-clone-efqcuwjrb-nnanyereugos-projects.vercel.app/'
   },
   {
     image: mockup2,
@@ -106,7 +115,7 @@ const Services = () => {
                   <span key={idx} className="badge bg-secondary me-2 mb-1">{tech}</span>
                 ))}
               </div>
-              <a href={project.link} className="btn btn-outline-primary">View Live</a>
+              <a href={project.link} target='_blank' className="btn btn-outline-primary">View Live</a>
             </div>
           </div>
         ))}

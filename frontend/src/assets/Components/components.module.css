@@ -1,3 +1,11 @@
 .workBulletList {
   list-style-type: disc;
 }
+.testimonialsCard{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.testimonialsCard div{
+  margin-top: auto;
+}

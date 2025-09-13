@@ -1,0 +1,27 @@
+in the scr file, we have the assets folder that includes all the assets that we want react to optimize
+
+in the public folder we include the assets that we do not want react to optimize - static assets
+
+
+VITE 
+- uses HMR- Hot Module Replacement over native esm (Ecma Script Module)
+  Meaning that instead of bundling the entire code to server it up to the browser, vite just replaces the part of the code that just got changed
+  making vite to achieve fast dev server start up time during scaffolding, 
+  and fast updates while the dev server is still running (without blowing uo the application state) 
+
+
+  when we run npm run build:
+     - any assets like images put in assets folder in src would be optimized by react 
+       either by hashing it...since the file is greater than say 4kb ---we can see a hash appended to the asset/img name - then stored in the dist folder
+        ::hence any file in the directory is imported by its relative path
+
+
+            like  import sophos from '../../assets/icons/sophos.png'
+
+
+    - if the asset is in the public folder it would not be optimized, i.e it would be coped as it is
+         ::hence any file in the directory is imported by its absolute  path
+
+
+
+            like import CyberSecurity from '/images/courses/cyber-security.jpg'
