@@ -22,9 +22,9 @@ const skillBadges = [
 ];
 
 const socialLinks = [
-  { icon: faLinkedinIn, href: 'https://linkedin.com/in/your-profile' },
-  { icon: faGithub, href: 'https://github.com/your-profile' },
-  { icon: faMedium, href: 'https://medium.com/@your-profile' }
+  { icon: faLinkedinIn, href: 'https://www.linkedin.com/in/nnanyereugo-nnaji-537731210/' },
+  { icon: faGithub, href: 'https://github.com/wisden2065' },
+  { icon: faMedium, href: 'https://medium.com/@nnajiwisdom1998' }
 ];
 
 const LandingPage = () => {

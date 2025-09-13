@@ -13,18 +13,18 @@ const Experience = () => {
       location: 'Abuja, FCT',
       period: 'July 2024 – Present',
       duties: [
-        'Collaborated with senior engineers on software development projects.',
+        'Collaborated with brilliant engineers on small and enterprise level software products.',
         'Set up and managed payment gateway accounts (Paystack & Flutterwave) for clients.',
         'Mentored junior developers and interns.',
-        'Delivered hands-on JavaScript training sessions with real-world application.',
+        'Delivered hands-on web development training sessions with real-world application.',
         'Worked with cross-functional teams to gather and analyze software requirements.',
         'Contributed to project documentation and internal development guidelines.',
-        'Assisted in troubleshooting and configuring SOPHOS Firewalls for clients.',
+        'Assisted in troubleshooting and configuring network systems as Switches, Routers and Firewalls for clients.',
       ],
     },
     {
       role: 'Diploma Software Engineer',
-      company: 'Artificial Intelligence Ltd',
+      company: 'Artificial Intelligence Technologies Ltd.',
       location: 'Abuja, FCT',
       period: 'Jan 2024 – Jul 2024',
       duties: [
