@@ -14,6 +14,7 @@ import About from '../Components/About/About';
 
 import LandingBg from '../assets/Images/codingBg.jpg'
 import FAQ from '../Components/FAQ/FAQ';
+import { useNavigate } from 'react-router-dom';
 
 const skillBadges = [
   { label: 'Web Development', icon: web },
@@ -27,8 +28,12 @@ const socialLinks = [
   { icon: faMedium, href: 'https://medium.com/@nnajiwisdom1998' }
 ];
 
+
+
 const LandingPage = () => {
   const { theme } = useContext(MyContext);
+  
+  const navigate = useNavigate()
 
   return (
     <>
@@ -83,10 +88,10 @@ const LandingPage = () => {
 
               {/* Buttons */}
               <div className="d-flex gap-3 flex-wrap mb-4">
-                <a href="#contact-section" className="btn btn-outline-info btn-sm">
+                <button onClick={()=>navigate('/contact')} className="btn btn-outline-info btn-sm">
                   Let's Talk
-                </a>
-                <a href="/cv.pdf" className="btn btn-outline-success btn-sm" download>
+                </button>
+                <a href="/CV-NnanyereugoWisdomNnaji.pdf" download='Cv-Nnaji_Wisdom(Moving Machine)' className="btn btn-outline-success btn-sm" download>
                   Download CV <FontAwesomeIcon icon={faDownload} className="ms-2 text-info" />
                 </a>
               </div>
