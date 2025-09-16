@@ -3,16 +3,15 @@ import React, { useContext } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './assets/Components/Header/Header'
-import LandingPage from './assets/LandingPage/LandingPage'
-import Skills from './assets/Components/SKills/Skills'
-import Project from './assets/Components/Projects/Project'
-import Form from './assets/Components/Form/Form'
-import Footer from './assets/Components/Footer/Footer'
-import Services from './assets/Components/Services/Services';
-import Blog from './assets/Components/Blog/Blog';
-import Navbar from './assets/Components/Navbar/Navbar';
-import { MyContext } from './assets/Context/MyAppContext';
+import Header from './root/Components/Header/Header'
+import LandingPage from './root/LandingPage/LandingPage'
+import Project from './root/Components/Projects/Project'
+import Form from './root/Components/Form/Form'
+import Footer from './root/Components/Footer/Footer'
+import Services from './root/Components/Services/Services';
+import Blog from './root/Components/Blog/Blog';
+import Navbar from './root/Components/Navbar/Navbar';
+import { MyContext } from './root/Context/MyAppContext';
 
 const App = () => {
   const {theme} = useContext(MyContext)

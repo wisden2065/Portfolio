@@ -4,15 +4,15 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { MyContext } from '../Context/MyAppContext';
 
-import profilePic from '../Images/MyPic.png';
-import web from '../Images/fullstack.png';
-import mobile from '../Images/mobile.webp';
-import training from '../Images/training.png';
+import profilePic from '../assets/Images/MyPic.png';
+import web from '../assets/Images/fullstack.png';
+import mobile from '../assets/Images/mobile.webp';
+import training from '../assets/Images/training.png';
 
-import Skills from '../Components/SKills/Skills';
+import Skills from '../Components/Skills/Skills';
 import About from '../Components/About/About';
 
-import LandingBg from '../Images/codingBg.jpg'
+import LandingBg from '../assets/Images/codingBg.jpg'
 import FAQ from '../Components/FAQ/FAQ';
 
 const skillBadges = [

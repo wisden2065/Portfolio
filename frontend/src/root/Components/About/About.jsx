@@ -2,9 +2,10 @@ import React, { useContext, useState } from 'react';
 import Slider from 'react-slick';
 import { MyContext } from '../../Context/MyAppContext';
 
-import class2 from '../../Images/teach.jpg';
-import class3 from '../../Images/field.jpg';
-import class5 from '../../Images/web-dev.jpeg';
+import class2 from '../../assets/Images/teach.jpg';
+import class3 from '../../assets/Images/teach2.jpeg';
+import class4 from '../../assets/Images/field.jpg';
+import class5 from '../../assets/Images/web-dev.jpeg';
 
 import Testimonials from '../Testimonials';
 import './About.css';
@@ -12,7 +13,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Experience from '../Experiences/Experiences';
 
-const images = [class2, class3, class5];
+const images = [class4, class5,class4, class3];
 
 const fullText = `👋 Hi, I'm Wisdom Nnaji — a Software Engineer with a background in Crop Science Technology from the Federal University of Technology, Owerri (FUTO).
 

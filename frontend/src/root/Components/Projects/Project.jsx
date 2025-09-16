@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.css'
-import proj1 from '../../Images/proj1.jpg'
+import proj1 from '../../assets/Images/proj1.jpg'
 import Chatbot from '../Chatbot/Chatbot'
 const Project = () => {
     let projects = [

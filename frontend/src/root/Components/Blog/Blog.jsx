@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import BlogHeader from './BlogHeader';
 import BlogLayout from './BlogLayout';
 
-import code from '../../Images/codingBg.jpg'
+import code from '../../assets/Images/codingBg.jpg'
 import { MyContext } from '../../Context/MyAppContext';
 
 const Blog = () => {

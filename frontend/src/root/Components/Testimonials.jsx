@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import ref1 from '../Images/ref.jpg'
-import ref2 from '../Images/ref2.jpg'
+import ref1 from '../assets/Images/ref.jpg'
+import ref2 from '../assets/Images/ref2.jpg'
 import { MyContext } from '../Context/MyAppContext';
 
 import styles from "./components.module.css"

@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTwitter, faMedium } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 const socialLinks = [
-  { icon: faLinkedin, href: 'https://linkedin.com/in/your-profile' },
-  { icon: faGithub, href: 'https://github.com/your-profile' },
-  { icon: faTwitter, href: 'https://twitter.com/your-profile' }
+  { icon: faLinkedin, href: 'https://www.linkedin.com/in/nnanyereugo-nnaji-537731210/' },
+  { icon: faGithub, href: 'https://github.com/wisden2065' },
+  { icon: faMedium, href: 'https://medium.com/@nnajiwisdom1998' }
 ];
 
 const Footer = () => {

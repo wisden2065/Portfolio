@@ -14,8 +14,9 @@ const BlogHeader = () => {
             className="form-control"
             placeholder="Search articles..."
             aria-label="Search blog"
+            disabled
           />
-          <button className="btn btn-outline-secondary" type="submit">
+          <button className="btn btn-outline-secondary" type="submit" disabled>
             Search
           </button>
         </div>

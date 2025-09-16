@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faMobileAlt, faChalkboardTeacher, faChartLine, faCode, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import mockup1 from '../../Images/mockup1-desktop.png';
-import mockup2 from '../../Images/mockup2-desktop.png';
-import mockup3 from '../../Images/mockup8-desktop.png';
+import mockup1 from '../../assets/Images/mockup10-desktop.png';
+import mockup2 from '../../assets/Images/mockup1-desktop.png';
+import mockup3 from '../../assets/Images/mockup2-desktop.png';
 
 import { MyContext } from '../../Context/MyAppContext';
 
@@ -49,21 +49,21 @@ const services = [
 
 const projects = [
   {
-    image: mockup3,
+    image: mockup1,
     title: 'Corporate Website – IT Training & Solutions Company',
     description: 'Redesigned and rebuilt my company’s website to increase visibility, improve user experience, and better showcase core company’s services. The project combined technical implementation with strategic content optimization for SEO and brand positioning.',
     stack: ['React', 'Node.js', 'Bootstrap', 'SEO Optimization', 'Content Strategy'],
     link: 'https://awatatech.com/'
   },
   {
-    image: mockup1,
+    image: mockup2,
     title: 'Konga Clone – Smart E-Commerce Platform',
     description: 'A full-featured e-commerce platform inspired by Konga, enhanced with AI product recommendations, implementing live chat, and secure auth.',
     stack: ['React', 'Node.js', 'MongoDB', 'Bootstrap'],
     link: 'https://konga-ui-clone-efqcuwjrb-nnanyereugos-projects.vercel.app/'
   },
   {
-    image: mockup2,
+    image: mockup3,
     title: 'Vaga Foods – Smart Food Ordering App',
     description: 'A location-aware food app recommending top restaurants based on user location, simplifying discovery and ordering.',
     stack: ['React', 'Node.js', 'MongoDB', 'Bootstrap', 'Geolocation API'],
