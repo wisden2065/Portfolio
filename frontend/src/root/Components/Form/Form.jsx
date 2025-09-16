@@ -203,7 +203,7 @@ const [isLoading, setIsLoading] = useState(false)
                     required
                   />
                 </div>
-                <button type="submit" onClick={handleSubmit} className="btn btn-primary px-4">Send</button>
+                <button type="submit" onClick={handleSubmit} className="btn btn-primary px-4">{isLoading?"Sending...":"Send"}</button>
               </form>
             </div>
           </div>

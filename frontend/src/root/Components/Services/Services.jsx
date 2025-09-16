@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faMobileAlt, faChalkboardTeacher, faChartLine, faCode, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import mockup1 from '../../assets/Images/mockup10-desktop.png';
+import mockup1 from '../../assets/Images/whatsss.jpg';
 import mockup2 from '../../assets/Images/mockup1-desktop.png';
 import mockup3 from '../../assets/Images/mockup2-desktop.png';
 
