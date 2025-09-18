@@ -35,7 +35,7 @@ li{
     cursor: pointer;
 }
 .active{
-    border-bottom: .2rem solid rgb(13,110,253);
+    border: .1rem solid rgb(13,110,253);
 }
 ul{
     display: flex;
@@ -61,10 +61,10 @@ ul{
     align-items: center;
     justify-content: center;
 }
-.icon-cont .icon .i{
+.icon-container .icon .i{
     font-size: clamp(10px, 1.5vw, 16px);
 }
-.icon-cont .icon .light{
+.icon-container .light{
    
     color: #ffdd00;
     text-shadow:  
@@ -73,7 +73,7 @@ ul{
       0 0 30px #ffaa00, 
        0 0 40px #ffaa00;
 }
-.icon-cont .icon .dark{
+.icon-container .dark{
     color: #353637;
     background-color: transparent;
 }
@@ -109,6 +109,9 @@ ul{
     color: white;
 }
 @media screen and (max-width: 800px) {
+    .logo{
+        margin-left: 0;
+    }
     nav .menu_icon{
         display: block;
     }

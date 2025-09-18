@@ -59,14 +59,14 @@ const projects = [
     image: mockup2,
     title: 'Konga Clone – Smart E-Commerce Platform',
     description: 'A full-featured e-commerce platform inspired by Konga, enhanced with AI product recommendations, implementing live chat, and secure auth.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Bootstrap'],
+    stack: ['React', 'Django', 'MongoDB', 'Bootstrap'],
     link: 'https://konga-ui-clone-efqcuwjrb-nnanyereugos-projects.vercel.app/'
   },
   {
     image: mockup3,
     title: 'Vaga Foods – Smart Food Ordering App',
     description: 'A location-aware food app recommending top restaurants based on user location, simplifying discovery and ordering.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Bootstrap', 'Geolocation API'],
+    stack: ['React', 'Nest.js', 'MongoDB', 'Redis', 'Bootstrap', 'Geolocation API'],
     link: '#'
   }
 ];
@@ -111,6 +111,7 @@ const Services = () => {
               <h3 className="fw-bold">{project.title}</h3>
               <p className={`${theme === 'light' ? 'text-muted ' : 'text-white ' }`}>{project.description}</p>
               <div className="mb-3">
+                <span className={`${theme === 'light' ? 'text-muted ' : 'text-white ' }`}>Technologies:</span> <br />
                 {project.stack.map((tech, idx) => (
                   <span key={idx} className="badge bg-secondary me-2 mb-1">{tech}</span>
                 ))}
